@@ -11,9 +11,12 @@
 <script>
     let number1=0;
     let number2=1;
+    let number3=0;
     for (let i=0;i<20;i++){
         number2=number1+number2;
         number1=number2-number1;
-        document.write(number2 + "<br>")
-    }
+        number3+=number2;
+
+    }alert(number3);
+
 </script>

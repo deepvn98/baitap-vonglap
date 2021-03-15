@@ -11,9 +11,13 @@
 <script>
     let number1=0;
     let number2=1;
-    for (let i=0;i<20;i++){
+    for (let i=0;i<=20;i++){
         number2=number1+number2;
         number1=number2-number1;
-        document.write(number2 + "<br>")
+        // document.write(number2 + "<br>")
+        if(number2%5==0){
+            alert(number2)
+            break;
+        }
     }
 </script>
